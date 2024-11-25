@@ -1,0 +1,139 @@
+.about{
+&-content{
+  display: flex;
+    gap: 19px; 
+    padding: 20px;
+    width: 100%;
+
+    &-personalwrapper,&-servicewrapper{
+      width: 50%;
+    }
+    &-personalwrapper{
+    h3{
+      color: var(--yellow-theme-main-color);
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 2.4rem;
+    }
+    h3.personalInfoheadtext{
+      padding-top: 10px;
+    }
+    p{
+      color: var(--yellow-theme-sub-text-color);
+      font-size: 1.7rem;
+      line-height: 2rem;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed var(--yellow-theme-main-color);
+    }
+
+    ul > li{
+      line-height: 1.5rem;
+      margin-bottom: 15px;
+
+      span.label,span.value{
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        border-bottom: 2px solid var(--yellow-theme-main-color);
+        position: relative;
+    display: inline-block;
+    color: var(--yellow-theme-sub-text-color);
+    margin-right: 16px;
+    padding-bottom: 5px;
+      }
+
+      span.value{
+        border:none;
+      }
+    }
+  
+  }
+
+  &-servicewrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-innercontent{
+      height: 350px;
+      width: 350px;
+      background:radial-gradient(180px, var(--yellow-theme-main-color),transparent 90% );
+      position: relative;
+      border-radius: 50%;
+      border: 1px solid var(--yellow-theme-main-color);
+      animation: rotation 10s linear 1s infinite;
+
+      div:nth-child(1){
+        position: absolute;
+        top:-9%;
+        left: 41%;
+      }
+
+      div:nth-child(2){
+        position: absolute;
+        top:41.5%;
+        right: -8%;
+      }
+      div:nth-child(3){
+        position: absolute;
+        bottom:-10%;
+        left: 41%;
+      }
+      div:nth-child(4){
+        position: absolute;
+        top:41%;
+        left: -8%;
+      }
+    }
+  }
+}
+
+}
+
+@keyframes rotation{
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+
+@media only screen and (max-width:768px){
+    .about-content{
+      flex-direction: column;
+
+      &-personalwrapper,&-servicewrapper{
+      width: 100%;
+    }
+
+    &-servicewrapper{
+      margin:10px 0px
+      &-innercontent{
+        height: 300px;
+        width: 300px;
+        background:radial-gradient(120px, var(--yellow-theme-main-color),transparent 120% );
+
+        div:nth-child(1){
+          position: absolute;
+          top:-15%;
+          left: 38%;
+        }
+  
+        div:nth-child(2){
+          position: absolute;
+          top:40%;
+          right: -11%;
+        }
+        div:nth-child(3){
+          position: absolute;
+          bottom:-12%;
+          left: 40%;
+        }
+        div:nth-child(4){
+          position: absolute;
+          top:40%;
+          left: -12%;
+        }
+
+      }
+    }
+    }
+}
