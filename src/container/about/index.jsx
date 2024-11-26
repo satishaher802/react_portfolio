@@ -3,7 +3,7 @@ import PageheaderContent from "../../Components/pageheadercontainer";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { useAnimateKeyframes } from "react-simple-animate";
 import "./style.scss";
-import { DiHtml5, DiCss3Full, DiJqueryLogo } from "react-icons/di";
+import { DiHtml5, DiCss3Full } from "react-icons/di";
 import { FaBootstrap, FaJs } from "react-icons/fa6";
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
   const jobSummery =
     "Proficient UI Developer with 8.5yrs of Experience in HTML5, CSS3,SCSS, Bootstrap5, copilot, and unitTesting and 4yrs in javascript, jQuery, and 2 yrs in Experience in React Js, Rest Api,json,library(Farmik,moment,axios,yup,react-hook-form,cookie,REDUX)";
 
-  const { play, style } = useAnimateKeyframes({
+  const { style } = useAnimateKeyframes({
     iterationCount: "infinite",
     direction: "alternate",
     duration: 5,

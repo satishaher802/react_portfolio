@@ -1,6 +1,5 @@
 import './App.scss'
-import { Route, Routes ,useLocation} from 'react-router-dom';
-import logo from './logo.svg';
+import { Route, Routes ,useLocation} from 'react-router-dom'; 
 import About from './container/about';
 import Home from './container/home';
 import Skills from './container/skills';
@@ -10,8 +9,7 @@ import Navbar from './Components/navbar';
 import Resume from './container/resume'; 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react"; 
-import { loadSlim } from "@tsparticles/slim";
-import particles from './utils.js/particles';
+import { loadSlim } from "@tsparticles/slim"; 
 
 function App() {
 
